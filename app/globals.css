@@ -11,6 +11,14 @@
 
 @layer base {
   body {
+    background: radial-gradient(circle,
+        rgba(0, 0, 0, 0.8901611670058649) 0%,
+        rgba(0, 0, 0, 1) 65%, rgba(0, 0, 0, 1) 0%),
+      url(/assets/images/background.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     @apply font-inter;
   }
 }
@@ -21,7 +29,7 @@
   }
 
   .head-text {
-    @apply mt-4 text-6xl leading-[72px] font-bold tracking-[-1.2px] text-gray-900;
+    @apply mt-4 text-6xl leading-[72px] font-bold tracking-[-1.2px] text-gray-200;
   }
 
   .section-text {
@@ -91,7 +99,7 @@
   }
 
   .dialog-content {
-    @apply p-6  bg-white inline-block w-full max-w-md my-8 overflow-hidden text-left align-middle transition-all transform  shadow-xl rounded-2xl;
+    @apply p-6 bg-white inline-block w-full max-w-md my-8 overflow-hidden text-left align-middle transition-all transform shadow-xl rounded-2xl;
   }
 
   .dialog-head_text {
@@ -147,6 +155,6 @@
   }
 
   .searchbar-btn {
-    @apply bg-gray-900 border border-gray-900 rounded-lg shadow-xs px-5 py-3 text-white text-base font-semibold hover:opacity-90 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-40;
+    @apply bg-[#141414] border border-[#1d1d1d] rounded-lg shadow-xs px-5 py-3 text-white text-base font-semibold hover:opacity-90 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-40;
   }
 }
